@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyHealth | واجهتك الصحية</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    background-color: #f5f5f5;
+  }
+
+  header {
+    background-color: #2e86de;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: rgb(252, 251, 251);
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 10px;
+    flex-wrap: wrap;
+  }
+
+  .category-card {
+    background-color: white;
+    width: 250px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .category-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .category-card img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .category-card h3 {
+    margin: 15px 0 10px 0;
+    color: #2e86de;
+  }
+
+  .category-card p {
+    padding: 0 10px 20px 10px;
+    color: #555;
+  }
+
+  .category-card a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #2e86de;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .category-card a:hover {
+    background-color: #1b4f72;
+  }
+
+  /* CONTACT SECTION */
+  .contact {
+    background-color: white;
+    padding: 60px 20px;
+    margin-top: 40px;
+  }
+
+  .contact h2 {
+    text-align: center;
+    color: #2e86de;
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px 20px;
+  }
+
+  .contact-info p {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .socials a {
+    color: #2e86de;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2e86de;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color: #1b4f72;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2e86de;
+    color: white;
+    margin-top: 40px;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to MyHealth | مرحبًا بك في ماي هيلث</h1>
+</header>
+
+<section class="hero">
+  <h1>Your Health, Our Priority</h1>
+  <p>ابحث عن أفضل الدكاترة والمستشفيات والصيدليات بالقرب منك</p>
+</section>
+
+<section class="categories">
+
+  <div class="category-card">
+    <img src="images/doctors.jpg" alt="Doctors">
+    <h3>Doctors | دكاترة</h3>
+    <p>Find specialists and book appointments easily. ابحث عن دكاترة وحجز مواعيد بسهولة</p>
+    <a href="doctors.html">Explore | استكشف</a>
+  </div>
+
+  <div class="category-card">
+    <img src="images/hospitals.jpg" alt="Hospitals">
+    <h3>Hospitals | مستشفيات</h3>
+    <p>Discover top hospitals near you. اكتشف أفضل المستشفيات بالقرب منك</p>
+    <a href="hospitals.html">Explore | استكشف</a>
+  </div>
+
+  <div class="category-card">
+    <img src="images/pharmacies.jpg" alt="Pharmacies">
+    <h3>Pharmacies | صيدليات</h3>
+    <p>Find pharmacies and check availability. ابحث عن الصيدليات وتحقق من التوافر</p>
+    <a href="pharmacies.html">Explore | استكشف</a>
+  </div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact">
+  <h2>Contact Us | تواصل معنا</h2>
+  <div class="contact-container">
+    
+    <div class="contact-info">
+      <p><strong>Email:</strong> moaazbasiouny9@gmail.com</p>
+      <p><strong>Phone:</strong> +20 1503060026</p>
+      <p><strong>Address:</strong> 10th of Ramadan, Sharkia, Egypt</p>
+
+      <div class="socials">
+        <a href="https://www.facebook.com/moaaz.basiouny.2025/">Facebook</a> | 
+        <a href="https://www.instagram.com/moaazbasiouny/">Instagram</a> | 
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form>
+        <input type="text" name="name" placeholder="Your Name | الاسم" required>
+        <input type="email" name="email" placeholder="Your Email | البريد" required>
+        <textarea name="message" rows="5" placeholder="Your Message | الرسالة" required></textarea>
+        <button type="submit">Send | أرسل</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 MyHealth | جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
